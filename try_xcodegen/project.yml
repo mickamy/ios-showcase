@@ -8,11 +8,13 @@ targets:
   TryXcodeGen:
     type: application
     platform: iOS
-    sources: try_xcodegen
+    sources: src
     configFiles:
       Debug: config/try_xcodegen-Debug.xcconfig
       Release: config/try_xcodegen-Release.xcconfig
     settings:
+      base:
+        INFOPLIST_FILE: src/resource/Info.plist
       CURRENT_PROJECT_VERSION: 1
     scheme:
       testTargets:
@@ -20,10 +22,13 @@ targets:
   TryXcodeGenTests:
     type: bundle.unit-test
     platform: iOS
-    sources: try_xcodegenTests
+    sources: test
     configFiles:
       Debug: config/try_xcodegenTests-Debug.xcconfig
       Release: config/try_xcodegenTests-Release.xcconfig
+    settings:
+      base:
+        INFOPLIST_FILE: test/resource/Info.plist
     dependencies:
       - target: TryXcodeGen
       
