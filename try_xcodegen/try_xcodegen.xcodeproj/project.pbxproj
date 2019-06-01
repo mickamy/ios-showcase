@@ -36,6 +36,15 @@
 		F5ADBBAB22A240E600596878 /* try_xcodegenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = try_xcodegenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5ADBBAF22A240E600596878 /* try_xcodegenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = try_xcodegenTests.swift; sourceTree = "<group>"; };
 		F5ADBBB122A240E600596878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FR_2700AC52E59D9485ABA05DF92D37D9AD /* try_xcodegen.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = try_xcodegen.xcconfig; path = config/try_xcodegen.xcconfig; sourceTree = "<absolute>"; };
+		FR_31B6E4428116B671EB2D985002690E16 /* Base.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = config/Base.xcconfig; sourceTree = "<absolute>"; };
+		FR_72F7223794A089A932BCB16E2A8403DA /* try_xcodegen-Release.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = "try_xcodegen-Release.xcconfig"; path = "config/try_xcodegen-Release.xcconfig"; sourceTree = "<absolute>"; };
+		FR_90817B88782D627054836F8E8A12FEDA /* try_xcodegenTests-Release.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = "try_xcodegenTests-Release.xcconfig"; path = "config/try_xcodegenTests-Release.xcconfig"; sourceTree = "<absolute>"; };
+		FR_C4AF1C4FCC58543C7E0F871B5B57E307 /* try_xcodegenTests.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = try_xcodegenTests.xcconfig; path = config/try_xcodegenTests.xcconfig; sourceTree = "<absolute>"; };
+		FR_C810B7A71835E1D51A24992123B73E5E /* try_xcodegen-Debug.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = "try_xcodegen-Debug.xcconfig"; path = "config/try_xcodegen-Debug.xcconfig"; sourceTree = "<absolute>"; };
+		FR_E18D98AAD68C1971877A1B64663E0059 /* try_xcodegenTests-Debug.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = "try_xcodegenTests-Debug.xcconfig"; path = "config/try_xcodegenTests-Debug.xcconfig"; sourceTree = "<absolute>"; };
+		FR_F58DF7ECBF59EDA9A734477993A5FAE3 /* Debug.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = config/Debug.xcconfig; sourceTree = "<absolute>"; };
+		FR_FBAB618A0A3BB0EFBF64453DFE48127E /* Release.xcconfig */ = {isa = PBXFileReference; explicitFileType = text.xcconfig; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = config/Release.xcconfig; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,7 @@
 				F5ADBB9922A240E500596878 /* try_xcodegen */,
 				F5ADBBAE22A240E600596878 /* try_xcodegenTests */,
 				F5ADBB9822A240E500596878 /* Products */,
+				G_E973C4B623C2BC98DB0EC562D2E29185 /* config */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +104,22 @@
 				F5ADBBB122A240E600596878 /* Info.plist */,
 			);
 			path = try_xcodegenTests;
+			sourceTree = "<group>";
+		};
+		G_E973C4B623C2BC98DB0EC562D2E29185 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				FR_2700AC52E59D9485ABA05DF92D37D9AD /* try_xcodegen.xcconfig */,
+				FR_C810B7A71835E1D51A24992123B73E5E /* try_xcodegen-Debug.xcconfig */,
+				FR_E18D98AAD68C1971877A1B64663E0059 /* try_xcodegenTests-Debug.xcconfig */,
+				FR_90817B88782D627054836F8E8A12FEDA /* try_xcodegenTests-Release.xcconfig */,
+				FR_F58DF7ECBF59EDA9A734477993A5FAE3 /* Debug.xcconfig */,
+				FR_FBAB618A0A3BB0EFBF64453DFE48127E /* Release.xcconfig */,
+				FR_C4AF1C4FCC58543C7E0F871B5B57E307 /* try_xcodegenTests.xcconfig */,
+				FR_72F7223794A089A932BCB16E2A8403DA /* try_xcodegen-Release.xcconfig */,
+				FR_31B6E4428116B671EB2D985002690E16 /* Base.xcconfig */,
+			);
+			name = config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,195 +268,43 @@
 /* Begin XCBuildConfiguration section */
 		F5ADBBB222A240E600596878 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR_F58DF7ECBF59EDA9A734477993A5FAE3 /* Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F5ADBBB322A240E600596878 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR_FBAB618A0A3BB0EFBF64453DFE48127E /* Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		F5ADBBB522A240E600596878 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR_C810B7A71835E1D51A24992123B73E5E /* try_xcodegen-Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AZ28EH9G9N;
-				INFOPLIST_FILE = try_xcodegen/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mickamy.try-xcodegen";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F5ADBBB622A240E600596878 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR_72F7223794A089A932BCB16E2A8403DA /* try_xcodegen-Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AZ28EH9G9N;
-				INFOPLIST_FILE = try_xcodegen/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mickamy.try-xcodegen";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		F5ADBBB822A240E600596878 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR_E18D98AAD68C1971877A1B64663E0059 /* try_xcodegenTests-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AZ28EH9G9N;
-				INFOPLIST_FILE = try_xcodegenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mickamy.try-xcodegenTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/try_xcodegen.app/try_xcodegen";
 			};
 			name = Debug;
 		};
 		F5ADBBB922A240E600596878 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FR_90817B88782D627054836F8E8A12FEDA /* try_xcodegenTests-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AZ28EH9G9N;
-				INFOPLIST_FILE = try_xcodegenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mickamy.try-xcodegenTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/try_xcodegen.app/try_xcodegen";
 			};
 			name = Release;
 		};

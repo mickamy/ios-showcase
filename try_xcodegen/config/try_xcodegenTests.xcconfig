@@ -1,0 +1,8 @@
+// Generated using xcconfig-extractor 0.5.0 by Toshihiro Suzuki - https://github.com/toshi0383/xcconfig-extractor
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+PRODUCT_BUNDLE_IDENTIFIER = com.mickamy.try-xcodegenTests
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/try_xcodegen.app/try_xcodegen
+INFOPLIST_FILE = try_xcodegenTests/Info.plist
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+BUNDLE_LOADER = $(TEST_HOST)
+
