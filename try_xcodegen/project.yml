@@ -1,0 +1,29 @@
+name: TryXcodeGen
+fileGroups:
+  - config
+configFiles:
+  Debug: config/Debug.xcconfig
+  Release: config/Release.xcconfig
+targets:
+  TryXcodeGen:
+    type: application
+    platform: iOS
+    sources: try_xcodegen
+    configFiles:
+      Debug: config/try_xcodegen-Debug.xcconfig
+      Release: config/try_xcodegen-Release.xcconfig
+    settings:
+      CURRENT_PROJECT_VERSION: 1
+    scheme:
+      testTargets:
+        - TryXcodeGenTests
+  TryXcodeGenTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: try_xcodegenTests
+    configFiles:
+      Debug: config/try_xcodegenTests-Debug.xcconfig
+      Release: config/try_xcodegenTests-Release.xcconfig
+    dependencies:
+      - target: TryXcodeGen
+      
