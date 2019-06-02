@@ -30,3 +30,4 @@ DerivedData/
 /*.gcno
 
 *.xcodeproj
+*.xcworkspace
