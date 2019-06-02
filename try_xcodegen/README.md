@@ -7,7 +7,9 @@ Manage it with [XcodeGen](https://github.com/yonaskolb/XcodeGen) and have happy 
 
 Just follow the instruction in the [repo](https://github.com/yonaskolb/XcodeGen).
 
-## Extract current configuration to xcconfig with xcconfig-extractor
+## Extract configurations into xcconfig
+
+We use [xcconfig-extractor](https://github.com/toshi0383/xcconfig-extractor/) to extract configurations into `.xcconfig` files.
 
 Again, just follow the instruction in the [repo](https://github.com/toshi0383/xcconfig-extractor/).
 Once it finished, hit 
@@ -19,7 +21,7 @@ With `.xconfig`s, we can slim `project.yml` up, which is the config file for `Xc
 
 ## Add configuration file for XcodeGen
 
-Now we write down Xcode project configurations with `project.yml`, which is the file name and format `XcodeGen` expects.
+Now we write down Xcode project configurations with `project.yml`, which is the file name and the format `XcodeGen` expects.
 
 `$ touch project.yml`
 
@@ -36,7 +38,7 @@ targets:
   TryXcodeGen:
     type: application
     platform: iOS
-    sources: src # path to your directory contains codes (namely where .swift files are exit)
+    sources: src # path to your directory contains codes (namely where .swift files exit)
     configFiles:
       Debug: config/try_xcodegen-Debug.xcconfig
       Release: config/try_xcodegen-Release.xcconfig
