@@ -61,4 +61,13 @@ targets:
       - target: TryXcodeGen
 ```
 
-That's it!
+## With CocoaPods
+
+You need to include `.xcconfig` created by CocoaPods in your project `.xcconfig`.
+
+```
+#include "try_xcodegen.xcconfig"
+#include "Pods/Target Support Files/Pods-TryXcodeGen/Pods-TryXcodeGen.debug.xcconfig" # <- Added!
+```
+
+See [this commit](https://github.com/mickamy/ios_showcase/pull/1/commits/f6132fe67aaa446eedf54365bad5695ff57c9d1e) for more details.
