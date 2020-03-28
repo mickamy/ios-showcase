@@ -13,6 +13,11 @@
 		1E773676242F246F006B43CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E773675242F246F006B43CC /* Assets.xcassets */; };
 		1E773679242F246F006B43CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E773677242F246F006B43CC /* LaunchScreen.storyboard */; };
 		1E773681242F2670006B43CC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E773680242F2670006B43CC /* ViewController.xib */; };
+		1E773684242F2A37006B43CC /* TakeAPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E773683242F2A37006B43CC /* TakeAPhotoViewController.swift */; };
+		1E773686242F2C1A006B43CC /* TakeAPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E773685242F2C1A006B43CC /* TakeAPhotoViewController.xib */; };
+		1E773689242F2ED3006B43CC /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E773687242F2ED3006B43CC /* CameraOverlayView.swift */; };
+		1E77368A242F2ED3006B43CC /* CameraOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E773688242F2ED3006B43CC /* CameraOverlayView.xib */; };
+		1E77368C242F2EF4006B43CC /* NibInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E77368B242F2EF4006B43CC /* NibInstantiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1E773678242F246F006B43CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E77367A242F246F006B43CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E773680242F2670006B43CC /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		1E773683242F2A37006B43CC /* TakeAPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeAPhotoViewController.swift; sourceTree = "<group>"; };
+		1E773685242F2C1A006B43CC /* TakeAPhotoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TakeAPhotoViewController.xib; sourceTree = "<group>"; };
+		1E773687242F2ED3006B43CC /* CameraOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOverlayView.swift; sourceTree = "<group>"; };
+		1E773688242F2ED3006B43CC /* CameraOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraOverlayView.xib; sourceTree = "<group>"; };
+		1E77368B242F2EF4006B43CC /* NibInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		1E77366B242F246F006B43CC /* avfoundation */ = {
 			isa = PBXGroup;
 			children = (
+				1E773682242F2A1C006B43CC /* camera */,
 				1E77366C242F246F006B43CC /* AppDelegate.swift */,
 				1E77366E242F246F006B43CC /* SceneDelegate.swift */,
 				1E773670242F246F006B43CC /* ViewController.swift */,
@@ -63,8 +74,28 @@
 				1E773675242F246F006B43CC /* Assets.xcassets */,
 				1E773677242F246F006B43CC /* LaunchScreen.storyboard */,
 				1E77367A242F246F006B43CC /* Info.plist */,
+				1E77368B242F2EF4006B43CC /* NibInstantiable.swift */,
 			);
 			path = avfoundation;
+			sourceTree = "<group>";
+		};
+		1E773682242F2A1C006B43CC /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				1E773683242F2A37006B43CC /* TakeAPhotoViewController.swift */,
+				1E773685242F2C1A006B43CC /* TakeAPhotoViewController.xib */,
+				1E77368F242F3115006B43CC /* view */,
+			);
+			path = camera;
+			sourceTree = "<group>";
+		};
+		1E77368F242F3115006B43CC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1E773687242F2ED3006B43CC /* CameraOverlayView.swift */,
+				1E773688242F2ED3006B43CC /* CameraOverlayView.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E77368A242F2ED3006B43CC /* CameraOverlayView.xib in Resources */,
+				1E773686242F2C1A006B43CC /* TakeAPhotoViewController.xib in Resources */,
 				1E773679242F246F006B43CC /* LaunchScreen.storyboard in Resources */,
 				1E773676242F246F006B43CC /* Assets.xcassets in Resources */,
 				1E773681242F2670006B43CC /* ViewController.xib in Resources */,
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E773684242F2A37006B43CC /* TakeAPhotoViewController.swift in Sources */,
+				1E77368C242F2EF4006B43CC /* NibInstantiable.swift in Sources */,
 				1E773671242F246F006B43CC /* ViewController.swift in Sources */,
 				1E77366D242F246F006B43CC /* AppDelegate.swift in Sources */,
 				1E77366F242F246F006B43CC /* SceneDelegate.swift in Sources */,
+				1E773689242F2ED3006B43CC /* CameraOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
