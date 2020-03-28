@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E773669242F246F006B43CC /* avfoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = avfoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E773669242F246F006B43CC /* AVFoundationShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E77366C242F246F006B43CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E77366E242F246F006B43CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1E773670242F246F006B43CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		1E773660242F246F006B43CC = {
 			isa = PBXGroup;
 			children = (
-				1E77366B242F246F006B43CC /* avfoundation */,
+				1E77366B242F246F006B43CC /* AVFoundationShowcase */,
 				1E77366A242F246F006B43CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		1E77366A242F246F006B43CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1E773669242F246F006B43CC /* avfoundation.app */,
+				1E773669242F246F006B43CC /* AVFoundationShowcase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1E77366B242F246F006B43CC /* avfoundation */ = {
+		1E77366B242F246F006B43CC /* AVFoundationShowcase */ = {
 			isa = PBXGroup;
 			children = (
 				1E773682242F2A1C006B43CC /* camera */,
@@ -76,7 +76,7 @@
 				1E77367A242F246F006B43CC /* Info.plist */,
 				1E77368B242F2EF4006B43CC /* NibInstantiable.swift */,
 			);
-			path = avfoundation;
+			path = AVFoundationShowcase;
 			sourceTree = "<group>";
 		};
 		1E773682242F2A1C006B43CC /* camera */ = {
@@ -115,7 +115,7 @@
 			);
 			name = avfoundation;
 			productName = avfoundation;
-			productReference = 1E773669242F246F006B43CC /* avfoundation.app */;
+			productReference = 1E773669242F246F006B43CC /* AVFoundationShowcase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1E773664242F246F006B43CC /* Build configuration list for PBXProject "avfoundation" */;
+			buildConfigurationList = 1E773664242F246F006B43CC /* Build configuration list for PBXProject "AVFoundationShowcase" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -314,13 +314,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AZ28EH9G9N;
-				INFOPLIST_FILE = avfoundation/Info.plist;
+				INFOPLIST_FILE = AVFoundationShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.mickamy.ios-showcase.avfoundation";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AVFoundationShowcase;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,13 +332,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AZ28EH9G9N;
-				INFOPLIST_FILE = avfoundation/Info.plist;
+				INFOPLIST_FILE = AVFoundationShowcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.mickamy.ios-showcase.avfoundation";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AVFoundationShowcase;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -347,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1E773664242F246F006B43CC /* Build configuration list for PBXProject "avfoundation" */ = {
+		1E773664242F246F006B43CC /* Build configuration list for PBXProject "AVFoundationShowcase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E77367B242F246F006B43CC /* Debug */,
