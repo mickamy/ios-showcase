@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeAPhotoViewController" customModule="avfoundation" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeAPhotoViewController" customModule="AVFoundationShowcase" customModuleProvider="target">
             <connections>
-                <outlet property="cameraOutputView" destination="o0Q-9u-BQh" id="vNn-yO-1ay"/>
+                <outlet property="cameraPreviewView" destination="o0Q-9u-BQh" id="kBb-tK-J9x"/>
                 <outlet property="capturedImageView" destination="OWd-ao-3X6" id="ffI-fB-5As"/>
                 <outlet property="overlayView" destination="ll9-sR-hX4" id="iS1-fe-LE3"/>
                 <outlet property="view" destination="8jY-V0-1xv" id="pwJ-mJ-mbR"/>
@@ -20,18 +21,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwE-w0-e8h">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <items>
+                        <navigationItem id="OOI-yU-pyn">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IqJ-ty-y7D">
+                                <connections>
+                                    <action selector="didTapCancel:" destination="-1" id="O8f-fS-QLw"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejO-w2-C6S" userLabel="Container">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0Q-9u-BQh">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0Q-9u-BQh" customClass="CameraPreviewView" customModule="AVFoundationShowcase" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWd-ao-3X6">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         </imageView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll9-sR-hX4" customClass="CameraOverlayView" customModule="avfoundation" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll9-sR-hX4" customClass="CameraOverlayView" customModule="AVFoundationShowcase" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                     </subviews>
@@ -52,11 +65,14 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="ejO-w2-C6S" firstAttribute="top" secondItem="8jY-V0-1xv" secondAttribute="top" id="6Mi-AX-cL5"/>
+                <constraint firstItem="ejO-w2-C6S" firstAttribute="top" secondItem="rwE-w0-e8h" secondAttribute="bottom" id="6Mi-AX-cL5"/>
                 <constraint firstAttribute="bottom" secondItem="ejO-w2-C6S" secondAttribute="bottom" id="76g-Uj-MZR"/>
                 <constraint firstAttribute="trailing" secondItem="ejO-w2-C6S" secondAttribute="trailing" id="QyX-WU-yiQ"/>
+                <constraint firstItem="rwE-w0-e8h" firstAttribute="trailing" secondItem="fyj-hO-rIS" secondAttribute="trailing" id="Z8l-vY-ieN"/>
+                <constraint firstItem="rwE-w0-e8h" firstAttribute="leading" secondItem="fyj-hO-rIS" secondAttribute="leading" id="Z8t-kF-lg9"/>
+                <constraint firstItem="rwE-w0-e8h" firstAttribute="top" secondItem="fyj-hO-rIS" secondAttribute="top" id="f0b-DI-L9g"/>
                 <constraint firstItem="ejO-w2-C6S" firstAttribute="leading" secondItem="8jY-V0-1xv" secondAttribute="leading" id="oqk-l6-Qkc"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fyj-hO-rIS"/>

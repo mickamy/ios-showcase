@@ -9,7 +9,7 @@
 import UIKit
 
 final class TakeAPhotoViewController: UIViewController {
-    @IBOutlet private weak var cameraOutputView: UIView!
+    @IBOutlet private weak var cameraPreviewView: CameraPreviewView!
     @IBOutlet private weak var capturedImageView: UIImageView!
     @IBOutlet private weak var overlayView: CameraOverlayView!
     
@@ -20,5 +20,10 @@ final class TakeAPhotoViewController: UIViewController {
     @available(*, unavailable)
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @IBAction
+    private func didTapCancel(_ sender: Any) {
+        dismiss(animated: true)
     }
 }
