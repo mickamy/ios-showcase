@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="avfoundation" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="NXJ-6i-RN5" id="Uf7-3F-aGc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NXJ-6i-RN5">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jed-89-zu4">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1o-dB-lp9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <state key="normal" title="Take a phto with AVFoundation"/>
+                            <connections>
+                                <action selector="didTapTakeAPhotoButton:" destination="-1" eventType="touchUpInside" id="ggf-ey-q3T"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="btg-z1-bJM" firstAttribute="trailing" secondItem="Jed-89-zu4" secondAttribute="trailing" id="6Lz-oa-dyW"/>
+                <constraint firstItem="Jed-89-zu4" firstAttribute="leading" secondItem="btg-z1-bJM" secondAttribute="leading" id="6ZO-pm-MW9"/>
+                <constraint firstItem="btg-z1-bJM" firstAttribute="bottom" secondItem="Jed-89-zu4" secondAttribute="bottom" id="6sJ-Ij-2uy"/>
+                <constraint firstItem="Jed-89-zu4" firstAttribute="top" secondItem="btg-z1-bJM" secondAttribute="top" id="Bqk-ee-TWG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="btg-z1-bJM"/>
+            <point key="canvasLocation" x="139" y="151"/>
+        </view>
+    </objects>
+</document>
