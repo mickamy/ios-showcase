@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeAPhotoViewController" customModule="avfoundation" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraOutputView" destination="o0Q-9u-BQh" id="vNn-yO-1ay"/>
+                <outlet property="capturedImageView" destination="OWd-ao-3X6" id="ffI-fB-5As"/>
+                <outlet property="overlayView" destination="ll9-sR-hX4" id="iS1-fe-LE3"/>
+                <outlet property="view" destination="8jY-V0-1xv" id="pwJ-mJ-mbR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8jY-V0-1xv">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejO-w2-C6S" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0Q-9u-BQh">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWd-ao-3X6">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll9-sR-hX4" customClass="CameraOverlayView" customModule="avfoundation" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ll9-sR-hX4" secondAttribute="bottom" id="0zo-oD-X4E"/>
+                        <constraint firstItem="o0Q-9u-BQh" firstAttribute="leading" secondItem="ejO-w2-C6S" secondAttribute="leading" id="8F0-U6-4OM"/>
+                        <constraint firstItem="o0Q-9u-BQh" firstAttribute="top" secondItem="ejO-w2-C6S" secondAttribute="top" id="GBc-Ue-3Yx"/>
+                        <constraint firstItem="ll9-sR-hX4" firstAttribute="top" secondItem="ejO-w2-C6S" secondAttribute="top" id="Of2-Zg-xN2"/>
+                        <constraint firstAttribute="trailing" secondItem="ll9-sR-hX4" secondAttribute="trailing" id="P4W-gb-fnE"/>
+                        <constraint firstAttribute="bottom" secondItem="OWd-ao-3X6" secondAttribute="bottom" id="Z5c-gh-pIP"/>
+                        <constraint firstAttribute="trailing" secondItem="OWd-ao-3X6" secondAttribute="trailing" id="gY9-Ed-XY7"/>
+                        <constraint firstItem="ll9-sR-hX4" firstAttribute="leading" secondItem="ejO-w2-C6S" secondAttribute="leading" id="i30-Uu-aff"/>
+                        <constraint firstAttribute="bottom" secondItem="o0Q-9u-BQh" secondAttribute="bottom" id="lLa-jj-4dc"/>
+                        <constraint firstItem="OWd-ao-3X6" firstAttribute="top" secondItem="ejO-w2-C6S" secondAttribute="top" id="m3w-QP-56d"/>
+                        <constraint firstAttribute="trailing" secondItem="o0Q-9u-BQh" secondAttribute="trailing" id="r2M-h8-7NU"/>
+                        <constraint firstItem="OWd-ao-3X6" firstAttribute="leading" secondItem="ejO-w2-C6S" secondAttribute="leading" id="uVY-QW-TCC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ejO-w2-C6S" firstAttribute="top" secondItem="8jY-V0-1xv" secondAttribute="top" id="6Mi-AX-cL5"/>
+                <constraint firstAttribute="bottom" secondItem="ejO-w2-C6S" secondAttribute="bottom" id="76g-Uj-MZR"/>
+                <constraint firstAttribute="trailing" secondItem="ejO-w2-C6S" secondAttribute="trailing" id="QyX-WU-yiQ"/>
+                <constraint firstItem="ejO-w2-C6S" firstAttribute="leading" secondItem="8jY-V0-1xv" secondAttribute="leading" id="oqk-l6-Qkc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fyj-hO-rIS"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
