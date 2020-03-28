@@ -17,6 +17,7 @@
 		1E773689242F2ED3006B43CC /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E773687242F2ED3006B43CC /* CameraOverlayView.swift */; };
 		1E77368A242F2ED3006B43CC /* CameraOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E773688242F2ED3006B43CC /* CameraOverlayView.xib */; };
 		1E77368C242F2EF4006B43CC /* NibInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E77368B242F2EF4006B43CC /* NibInstantiable.swift */; };
+		1EEB86EC242F54CE007D606E /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB86EB242F54CE007D606E /* CameraPreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1E773687242F2ED3006B43CC /* CameraOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOverlayView.swift; sourceTree = "<group>"; };
 		1E773688242F2ED3006B43CC /* CameraOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraOverlayView.xib; sourceTree = "<group>"; };
 		1E77368B242F2EF4006B43CC /* NibInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibInstantiable.swift; sourceTree = "<group>"; };
+		1EEB86EB242F54CE007D606E /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		1E77366B242F246F006B43CC /* AVFoundationShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				1EEB86EA242F54C3007D606E /* view */,
 				1E773682242F2A1C006B43CC /* camera */,
 				1E77366C242F246F006B43CC /* AppDelegate.swift */,
 				1E773670242F246F006B43CC /* ViewController.swift */,
@@ -91,6 +94,14 @@
 			children = (
 				1E773687242F2ED3006B43CC /* CameraOverlayView.swift */,
 				1E773688242F2ED3006B43CC /* CameraOverlayView.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1EEB86EA242F54C3007D606E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1EEB86EB242F54CE007D606E /* CameraPreviewView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -170,6 +181,7 @@
 			files = (
 				1E773684242F2A37006B43CC /* TakeAPhotoViewController.swift in Sources */,
 				1E77368C242F2EF4006B43CC /* NibInstantiable.swift in Sources */,
+				1EEB86EC242F54CE007D606E /* CameraPreviewView.swift in Sources */,
 				1E773671242F246F006B43CC /* ViewController.swift in Sources */,
 				1E77366D242F246F006B43CC /* AppDelegate.swift in Sources */,
 				1E773689242F2ED3006B43CC /* CameraOverlayView.swift in Sources */,
