@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1E773668242F246F006B43CC /* avfoundation */ = {
+		1E773668242F246F006B43CC /* AVFoundationShowcase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1E77367D242F246F006B43CC /* Build configuration list for PBXNativeTarget "avfoundation" */;
+			buildConfigurationList = 1E77367D242F246F006B43CC /* Build configuration list for PBXNativeTarget "AVFoundationShowcase" */;
 			buildPhases = (
 				1E773665242F246F006B43CC /* Sources */,
 				1E773666242F246F006B43CC /* Frameworks */,
@@ -110,7 +110,7 @@
 			);
 			dependencies = (
 			);
-			name = avfoundation;
+			name = AVFoundationShowcase;
 			productName = avfoundation;
 			productReference = 1E773669242F246F006B43CC /* AVFoundationShowcase.app */;
 			productType = "com.apple.product-type.application";
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1E773668242F246F006B43CC /* avfoundation */,
+				1E773668242F246F006B43CC /* AVFoundationShowcase */,
 			);
 		};
 /* End PBXProject section */
@@ -354,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1E77367D242F246F006B43CC /* Build configuration list for PBXNativeTarget "avfoundation" */ = {
+		1E77367D242F246F006B43CC /* Build configuration list for PBXNativeTarget "AVFoundationShowcase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1E77367E242F246F006B43CC /* Debug */,

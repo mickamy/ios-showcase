@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E773668242F246F006B43CC"
                BuildableName = "AVFoundationShowcase.app"
-               BlueprintName = "avfoundation"
+               BlueprintName = "AVFoundationShowcase"
                ReferencedContainer = "container:AVFoundationShowcase.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,7 +46,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E773668242F246F006B43CC"
             BuildableName = "AVFoundationShowcase.app"
-            BlueprintName = "avfoundation"
+            BlueprintName = "AVFoundationShowcase"
             ReferencedContainer = "container:AVFoundationShowcase.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,7 +63,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1E773668242F246F006B43CC"
             BuildableName = "AVFoundationShowcase.app"
-            BlueprintName = "avfoundation"
+            BlueprintName = "AVFoundationShowcase"
             ReferencedContainer = "container:AVFoundationShowcase.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
