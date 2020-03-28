@@ -23,6 +23,8 @@ final class ViewController: UIViewController {
     }
 
     @IBAction func didTapTakeAPhotoButton(_ sender: Any) {
-        
+        let destination = TakeAPhotoViewController()
+        destination.modalPresentationStyle = .fullScreen
+        present(destination, animated: true)
     }
 }
