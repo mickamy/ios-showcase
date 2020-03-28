@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E77366D242F246F006B43CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E77366C242F246F006B43CC /* AppDelegate.swift */; };
-		1E77366F242F246F006B43CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E77366E242F246F006B43CC /* SceneDelegate.swift */; };
 		1E773671242F246F006B43CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E773670242F246F006B43CC /* ViewController.swift */; };
 		1E773676242F246F006B43CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E773675242F246F006B43CC /* Assets.xcassets */; };
 		1E773679242F246F006B43CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E773677242F246F006B43CC /* LaunchScreen.storyboard */; };
@@ -23,7 +22,6 @@
 /* Begin PBXFileReference section */
 		1E773669242F246F006B43CC /* AVFoundationShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E77366C242F246F006B43CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E77366E242F246F006B43CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1E773670242F246F006B43CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1E773675242F246F006B43CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E773678242F246F006B43CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 			children = (
 				1E773682242F2A1C006B43CC /* camera */,
 				1E77366C242F246F006B43CC /* AppDelegate.swift */,
-				1E77366E242F246F006B43CC /* SceneDelegate.swift */,
 				1E773670242F246F006B43CC /* ViewController.swift */,
 				1E773680242F2670006B43CC /* ViewController.xib */,
 				1E773675242F246F006B43CC /* Assets.xcassets */,
@@ -175,7 +172,6 @@
 				1E77368C242F2EF4006B43CC /* NibInstantiable.swift in Sources */,
 				1E773671242F246F006B43CC /* ViewController.swift in Sources */,
 				1E77366D242F246F006B43CC /* AppDelegate.swift in Sources */,
-				1E77366F242F246F006B43CC /* SceneDelegate.swift in Sources */,
 				1E773689242F2ED3006B43CC /* CameraOverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
