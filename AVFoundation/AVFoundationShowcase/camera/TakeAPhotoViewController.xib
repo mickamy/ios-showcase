@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeAPhotoViewController" customModule="AVFoundationShowcase" customModuleProvider="target">
+            <connections>
+                <outlet property="capturedImageView" destination="OWd-ao-3X6" id="ffI-fB-5As"/>
+                <outlet property="indicatorView" destination="pBp-rf-Cbd" id="atQ-8p-VvV"/>
+                <outlet property="overlayView" destination="ll9-sR-hX4" id="iS1-fe-LE3"/>
+                <outlet property="previewView" destination="o0Q-9u-BQh" id="kBb-tK-J9x"/>
+                <outlet property="view" destination="8jY-V0-1xv" id="pwJ-mJ-mbR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8jY-V0-1xv">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwE-w0-e8h">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <items>
+                        <navigationItem id="OOI-yU-pyn">
+                            <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="IqJ-ty-y7D">
+                                <connections>
+                                    <action selector="didTapCancel:" destination="-1" id="O8f-fS-QLw"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejO-w2-C6S" userLabel="Container">
+                    <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0Q-9u-BQh" customClass="CameraPreviewView" customModule="AVFoundationShowcase" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWd-ao-3X6">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll9-sR-hX4" customClass="CameraOverlayView" customModule="AVFoundationShowcase" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="pBp-rf-Cbd">
+                            <rect key="frame" x="197" y="394" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ll9-sR-hX4" secondAttribute="bottom" id="0zo-oD-X4E"/>
+                        <constraint firstItem="o0Q-9u-BQh" firstAttribute="leading" secondItem="ejO-w2-C6S" secondAttribute="leading" id="8F0-U6-4OM"/>
+                        <constraint firstItem="o0Q-9u-BQh" firstAttribute="top" secondItem="ejO-w2-C6S" secondAttribute="top" id="GBc-Ue-3Yx"/>
+                        <constraint firstItem="ll9-sR-hX4" firstAttribute="top" secondItem="ejO-w2-C6S" secondAttribute="top" id="Of2-Zg-xN2"/>
+                        <constraint firstAttribute="trailing" secondItem="ll9-sR-hX4" secondAttribute="trailing" id="P4W-gb-fnE"/>
+                        <constraint firstAttribute="bottom" secondItem="OWd-ao-3X6" secondAttribute="bottom" id="Z5c-gh-pIP"/>
+                        <constraint firstItem="pBp-rf-Cbd" firstAttribute="centerY" secondItem="ejO-w2-C6S" secondAttribute="centerY" id="dDl-2c-nsL"/>
+                        <constraint firstAttribute="trailing" secondItem="OWd-ao-3X6" secondAttribute="trailing" id="gY9-Ed-XY7"/>
+                        <constraint firstItem="ll9-sR-hX4" firstAttribute="leading" secondItem="ejO-w2-C6S" secondAttribute="leading" id="i30-Uu-aff"/>
+                        <constraint firstAttribute="bottom" secondItem="o0Q-9u-BQh" secondAttribute="bottom" id="lLa-jj-4dc"/>
+                        <constraint firstItem="OWd-ao-3X6" firstAttribute="top" secondItem="ejO-w2-C6S" secondAttribute="top" id="m3w-QP-56d"/>
+                        <constraint firstItem="pBp-rf-Cbd" firstAttribute="centerX" secondItem="ejO-w2-C6S" secondAttribute="centerX" id="qpn-qK-0Q6"/>
+                        <constraint firstAttribute="trailing" secondItem="o0Q-9u-BQh" secondAttribute="trailing" id="r2M-h8-7NU"/>
+                        <constraint firstItem="OWd-ao-3X6" firstAttribute="leading" secondItem="ejO-w2-C6S" secondAttribute="leading" id="uVY-QW-TCC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ejO-w2-C6S" firstAttribute="top" secondItem="rwE-w0-e8h" secondAttribute="bottom" id="6Mi-AX-cL5"/>
+                <constraint firstAttribute="bottom" secondItem="ejO-w2-C6S" secondAttribute="bottom" id="76g-Uj-MZR"/>
+                <constraint firstAttribute="trailing" secondItem="ejO-w2-C6S" secondAttribute="trailing" id="QyX-WU-yiQ"/>
+                <constraint firstItem="rwE-w0-e8h" firstAttribute="trailing" secondItem="fyj-hO-rIS" secondAttribute="trailing" id="Z8l-vY-ieN"/>
+                <constraint firstItem="rwE-w0-e8h" firstAttribute="leading" secondItem="fyj-hO-rIS" secondAttribute="leading" id="Z8t-kF-lg9"/>
+                <constraint firstItem="rwE-w0-e8h" firstAttribute="top" secondItem="fyj-hO-rIS" secondAttribute="top" id="f0b-DI-L9g"/>
+                <constraint firstItem="ejO-w2-C6S" firstAttribute="leading" secondItem="8jY-V0-1xv" secondAttribute="leading" id="oqk-l6-Qkc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fyj-hO-rIS"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
