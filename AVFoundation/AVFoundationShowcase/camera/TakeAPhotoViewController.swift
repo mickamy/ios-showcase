@@ -36,7 +36,6 @@ final class TakeAPhotoViewController: UIViewController, CameraPermissionRequesta
     
     let cameraPermissionRequester = CameraPermissionRequester()
     let photoPermissionRequester = PhotoPermissionRequester()
-    var permissionRequesters: [PermissionRequester] { [cameraPermissionRequester, photoPermissionRequester] }
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -94,7 +93,7 @@ private extension TakeAPhotoViewController {
                 presentNotAuthorizedAlert(for: requester.permission, inStatus: status) { self.dismiss(animated: true) }
             case .notDetermined:
                 self.sessionQueue.suspend()
-                self.cameraPermissionRequester.request { result in
+                requester.request { result in
                     guard result == .authorized else {
                         self.sessionQueue.suspend()
                         return self.presentNotAuthorizedAlert(for: requester.permission, inStatus: result) { self.dismiss(animated: true) }

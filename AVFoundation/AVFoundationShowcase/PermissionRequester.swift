@@ -35,6 +35,7 @@ public enum PermissionType {
 
 public protocol PermissionRequestable: UIViewControllerPresentable {
     var permissionRequesters: [PermissionRequester] { get }
+    
     func presentDeniedAlert(for permission: PermissionType, completion: (() -> Void)?)
     func presentDisabledAlert(for permission: PermissionType, completion: (() -> Void)?)
 }
@@ -43,9 +44,24 @@ extension PermissionRequestable {
     public func requester(for permission: PermissionType) -> PermissionRequester {
         permissionRequesters.first(where: { type(of: $0).permission == permission })!
     }
+    
+    public func presentNotAuthorizedAlert(for permission: PermissionType, inStatus status: PermissionStatus, completion: (() -> Void)?) {
+        switch status {
+        case .authorized:
+            fatalError("(\(permission) is authorized!")
+        case .denied:
+            presentDeniedAlert(for: permission, completion: completion)
+        case .disabled:
+            presentDisabledAlert(for: permission, completion: completion)
+        case .notDetermined:
+            fatalError("\(permission) is not determined")
+        }
+    }
 }
 
 extension PermissionRequestable where Self: CameraPermissionRequestable, Self: PhotoPermissionRequestable {
+    public var permissionRequesters: [PermissionRequester] { [cameraPermissionRequester, photoPermissionRequester] }
+    
     public func presentDeniedAlert(for permission: PermissionType, completion: (() -> Void)? = nil) {
         switch permission {
         case .camera:
@@ -61,19 +77,6 @@ extension PermissionRequestable where Self: CameraPermissionRequestable, Self: P
             presentCameraDisabledAlert { completion?() }
         case .photo:
             presentPhotoDisabledAlert { completion?() }
-        }
-    }
-    
-    public func presentNotAuthorizedAlert(for permission: PermissionType, inStatus status: PermissionStatus, completion: (() -> Void)?) {
-        switch status {
-        case .authorized:
-            fatalError("(\(permission) is authorized!")
-        case .denied:
-            presentDeniedAlert(for: permission, completion: completion)
-        case .disabled:
-            presentDisabledAlert(for: permission, completion: completion)
-        case .notDetermined:
-            fatalError("\(permission) is not determined")
         }
     }
 }
