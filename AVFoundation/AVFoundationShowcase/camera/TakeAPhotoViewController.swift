@@ -11,11 +11,7 @@ import AVFoundation
 
 final class TakeAPhotoViewController: UIViewController, CameraPermissionRequestable, PhotoPermissionRequestable, PermissionRequestable {
     @IBOutlet private weak var previewView: CameraPreviewView!
-    @IBOutlet private weak var capturedImageView: UIImageView! {
-        didSet {
-            capturedImageView.isHidden = true
-        }
-    }
+    @IBOutlet private weak var capturedImageView: UIImageView!
     @IBOutlet private weak var overlayView: CameraOverlayView!
     @IBOutlet private weak var indicatorView: UIActivityIndicatorView! {
         didSet {
@@ -32,7 +28,7 @@ final class TakeAPhotoViewController: UIViewController, CameraPermissionRequesta
     
     private var isSessionRunning = false
     
-    @objc dynamic var videoDeviceInput: AVCaptureDeviceInput!
+    private var videoDeviceInput: AVCaptureDeviceInput!
     
     let cameraPermissionRequester = CameraPermissionRequester()
     let photoPermissionRequester = PhotoPermissionRequester()
@@ -191,6 +187,9 @@ private extension TakeAPhotoViewController {
                 // When the capture is complete, remove a reference to the photo capture delegate so it can be deallocated.
                 self.sessionQueue.async {
                     self.captureProcessor = nil
+                }
+                DispatchQueue.main.async {
+                    self.capturedImageView.image = photoCaptureProcessor.photoData.flatMap(UIImage.init(data:))
                 }
             },
             photoProcessingHandler: { animate in

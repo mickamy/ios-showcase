@@ -21,7 +21,7 @@ final class PhotoCaptureProcessor: NSObject {
     
     private let photoProcessingHandler: (Bool) -> Void
     
-    private var photoData: Data?
+    var photoData: Data?
     
     private var livePhotoCompanionMovieURL: URL?
     
