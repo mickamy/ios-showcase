@@ -34,6 +34,8 @@ final class CameraOverlayView: UIView {
             view.trailingAnchor.constraint(equalTo: trailingAnchor),
             view.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
+        
+        shutterButton.addTarget(self, action: #selector(Self.didTapShutterButton(sender:)), for: .touchUpInside)
     }
     
     @objc private func didTapShutterButton(sender: UIButton) {
