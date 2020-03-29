@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2A1839242F823700992C12 /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A1838242F823700992C12 /* PhotoCaptureProcessor.swift */; };
+		1E2A183B242F9F0000992C12 /* CameraPermissionRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A183A242F9F0000992C12 /* CameraPermissionRequester.swift */; };
+		1E2A183D242FA2B700992C12 /* UIAlertController.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A183C242FA2B700992C12 /* UIAlertController.ex.swift */; };
+		1E2A183F242FA2E100992C12 /* UIAlertAction.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A183E242FA2E100992C12 /* UIAlertAction.ex.swift */; };
+		1E2A1841242FB4D200992C12 /* PermissionRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A1840242FB4D200992C12 /* PermissionRequester.swift */; };
+		1E2A1843242FB72E00992C12 /* PhotoPermissionRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A1842242FB72E00992C12 /* PhotoPermissionRequester.swift */; };
+		1E2A1845242FB86600992C12 /* UIViewPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2A1844242FB86600992C12 /* UIViewPresentable.swift */; };
 		1E77366D242F246F006B43CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E77366C242F246F006B43CC /* AppDelegate.swift */; };
 		1E773671242F246F006B43CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E773670242F246F006B43CC /* ViewController.swift */; };
 		1E773676242F246F006B43CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E773675242F246F006B43CC /* Assets.xcassets */; };
@@ -21,6 +28,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E2A1838242F823700992C12 /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		1E2A183A242F9F0000992C12 /* CameraPermissionRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionRequester.swift; sourceTree = "<group>"; };
+		1E2A183C242FA2B700992C12 /* UIAlertController.ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.ex.swift; sourceTree = "<group>"; };
+		1E2A183E242FA2E100992C12 /* UIAlertAction.ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertAction.ex.swift; sourceTree = "<group>"; };
+		1E2A1840242FB4D200992C12 /* PermissionRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionRequester.swift; sourceTree = "<group>"; };
+		1E2A1842242FB72E00992C12 /* PhotoPermissionRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPermissionRequester.swift; sourceTree = "<group>"; };
+		1E2A1844242FB86600992C12 /* UIViewPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPresentable.swift; sourceTree = "<group>"; };
 		1E773669242F246F006B43CC /* AVFoundationShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E77366C242F246F006B43CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E773670242F246F006B43CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +89,13 @@
 				1E773677242F246F006B43CC /* LaunchScreen.storyboard */,
 				1E77367A242F246F006B43CC /* Info.plist */,
 				1E77368B242F2EF4006B43CC /* NibInstantiable.swift */,
+				1E2A1838242F823700992C12 /* PhotoCaptureProcessor.swift */,
+				1E2A183A242F9F0000992C12 /* CameraPermissionRequester.swift */,
+				1E2A1842242FB72E00992C12 /* PhotoPermissionRequester.swift */,
+				1E2A1840242FB4D200992C12 /* PermissionRequester.swift */,
+				1E2A1844242FB86600992C12 /* UIViewPresentable.swift */,
+				1E2A183C242FA2B700992C12 /* UIAlertController.ex.swift */,
+				1E2A183E242FA2E100992C12 /* UIAlertAction.ex.swift */,
 			);
 			path = AVFoundationShowcase;
 			sourceTree = "<group>";
@@ -179,10 +200,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E2A1843242FB72E00992C12 /* PhotoPermissionRequester.swift in Sources */,
+				1E2A183F242FA2E100992C12 /* UIAlertAction.ex.swift in Sources */,
 				1E773684242F2A37006B43CC /* TakeAPhotoViewController.swift in Sources */,
 				1E77368C242F2EF4006B43CC /* NibInstantiable.swift in Sources */,
+				1E2A183D242FA2B700992C12 /* UIAlertController.ex.swift in Sources */,
 				1EEB86EC242F54CE007D606E /* CameraPreviewView.swift in Sources */,
 				1E773671242F246F006B43CC /* ViewController.swift in Sources */,
+				1E2A183B242F9F0000992C12 /* CameraPermissionRequester.swift in Sources */,
+				1E2A1841242FB4D200992C12 /* PermissionRequester.swift in Sources */,
+				1E2A1845242FB86600992C12 /* UIViewPresentable.swift in Sources */,
+				1E2A1839242F823700992C12 /* PhotoCaptureProcessor.swift in Sources */,
 				1E77366D242F246F006B43CC /* AppDelegate.swift in Sources */,
 				1E773689242F2ED3006B43CC /* CameraOverlayView.swift in Sources */,
 			);
